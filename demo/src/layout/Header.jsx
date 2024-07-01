@@ -5,9 +5,9 @@ import scarlet from "../assets/scarlet.png";
 function Header() {
   return (
     <div className="">
-      <div className="flex justify-between my-6 px-24">
+      <div className="flex justify-between my-6 px-24 font-inter">
         <div className="flex gap-16 items-center">
-          <p className="font-extrabold text-2xl leading-10 text-[#0D3356]">
+          <p className="font-extrabold text-[33px] leading-10 text-[#0D3356]">
             FashionHub
           </p>
           <div className="flex gap-14 ">

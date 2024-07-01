@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../context/ContextProvider";
 import star from "../assets/Star.png";
+import { IoIosArrowUp } from "react-icons/io";
 function RatingFilter() {
   const { selectedRating, setSelectedRating, getRatingCount } =
     useContext(Context);
@@ -12,7 +13,10 @@ function RatingFilter() {
   return (
     <div className="w-[90%]  mx-auto flex flex-col gap-4">
       <div className="flex justify-between items-center">
-        <h3 className="font-medium leading-6 text-2xl #140342">Ratings</h3>
+        <h3 className="font-medium leading-6 text-2xl text-[#140342]">
+          Ratings
+        </h3>
+        <IoIosArrowUp className="text-[#140342]" />
       </div>
       <div>
         <div className="flex flex-col gap-3">
@@ -26,6 +30,7 @@ function RatingFilter() {
                   value={rating}
                   checked={selectedRating === rating}
                   onChange={() => handleRatingChange(rating)}
+                  className="accent-[#1A064F] scale-110"
                 />
                 <div className="flex gap-1">
                   <img src={star} alt="" />

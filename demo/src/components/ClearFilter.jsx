@@ -40,9 +40,11 @@ function ClearFilter() {
 
   return (
     <div className="flex justify-between items-center ">
-      <p className="m-0 p-0">Filters</p>
+      <p className="m-0 p-0 text-[#140342] text-xl leading-6 font-medium">
+        Filters
+      </p>
       <button
-        className="border-2 border-[#E4E4E4] rounded-[30px] py-2 px-4"
+        className="border-2 border-[#E4E4E4] rounded-[30px] py-2 px-4 text-[#726C6C] text-sm"
         onClick={handleClearAll}
       >
         Clear All

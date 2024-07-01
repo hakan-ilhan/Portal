@@ -26,7 +26,9 @@ function CategoryFilter() {
   return (
     <div className="w-[90%] py-4 flex flex-col gap-4 mx-auto">
       <div className="flex justify-between items-center">
-        <h3 className="font-medium leading-6 text-2xl #140342">Category</h3>
+        <h3 className="font-medium leading-6 text-2xl text-[#140342]">
+          Category
+        </h3>
         <IoIosArrowUp className="text-[#140342]" />
       </div>
       <div>
@@ -42,12 +44,17 @@ function CategoryFilter() {
                   onChange={() => handleCategoryChange(cat)}
                 />
 
-                <label htmlFor={cat} className="text-[#1A064F] text-sm">
+                <label
+                  htmlFor={cat}
+                  className="text-[#1A064F] text-sm leading-[30px]"
+                >
                   {cat}
                 </label>
               </div>
 
-              <p className="my-auto">({categoryCounts[cat] || 0})</p>
+              <p className="my-auto text-[#4F547B]">
+                ({categoryCounts[cat] || 0})
+              </p>
             </div>
           ))}
         </div>

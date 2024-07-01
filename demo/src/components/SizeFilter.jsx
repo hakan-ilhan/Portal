@@ -28,7 +28,7 @@ function SizeFilter() {
     <div className="w-[90%] mx-auto flex flex-col gap-4 py-4">
       <div>
         <div className="flex justify-between">
-          <p className="font-medium text-xl leading-6">Size</p>
+          <p className="font-medium text-xl leading-6 text-[#140342]">Size</p>
           <IoIosArrowUp className="text-[#140342]" />
         </div>
         <Slider

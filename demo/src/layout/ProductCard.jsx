@@ -1,10 +1,14 @@
 import React from "react";
 import star from "../assets/Star.png";
+import { FaRegHeart } from "react-icons/fa";
 function ProductCard({ product }) {
   return (
     <div className=" w-[305px] font-inter ">
-      <div className="bg-[#F7F5F7] rounded-t-3xl">
+      <div className="bg-[#F7F5F7] rounded-t-3xl relative">
         <img className="p-4" src={product.image} />
+        <div className="w-12 h-12 rounded-full absolute top-[3%] right-[3%] bg-white flex items-center">
+          <FaRegHeart className="text-[#667085] text-xl my-auto mx-auto" />
+        </div>
       </div>
       <div className="p-4 flex flex-col gap-6 rounded-3xl rounded-t-none border-2 border-[#F7F5F7] ">
         <div className="flex flex-col ">
